@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Utensils, Wine, Music, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
-import MenuCard from '@/components/dining/MenuCard';
+import MenuCard from '@/Components/dining/MenuCard';
 import shahiThali from '@/assets/shahi_thali.jpg';
 import puranPoli from '@/assets/puran_poli.jpg';
 import misalPav from '@/assets/misal_pav.jpg';
