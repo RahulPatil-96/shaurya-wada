@@ -1,0 +1,254 @@
+@import "tailwindcss";
+
+/* Custom styles */
+.gold-text {
+  background: linear-gradient(45deg, #D4AF37, #FFD700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gold-heading {
+  background: linear-gradient(45deg, #D4AF37, #FFD700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.pattern-warli {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D4AF37' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.pattern-jaali {
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23D4AF37' fill-opacity='0.1' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Dark mode styles */
+.dark {
+  --color-royal-brown: #1a0f08;
+  --color-gold: #f4c430;
+  --color-maroon: #2a1a12;
+  --color-orange: #d43d0a;
+  --color-cream: #f5f1e8;
+}
+
+.dark .bg-cream {
+  background-color: #1a0f08;
+}
+
+.dark .text-maroon {
+  color: #f5f1e8;
+}
+
+.dark .bg-maroon {
+  background-color: #2a1a12;
+}
+
+.dark .text-cream {
+  color: #f5f1e8;
+}
+
+.dark .bg-royal-brown {
+  background-color: #1a0f08;
+}
+
+.dark .text-gold {
+  color: #f4c430;
+}
+
+.dark .bg-gold {
+  background-color: #f4c430;
+}
+
+.dark .text-orange {
+  color: #d43d0a;
+}
+
+.dark .bg-orange {
+  background-color: #d43d0a;
+}
+
+/* Theme-aware base classes */
+.bg-background {
+  background-color: #FFF8E7; /* cream */
+}
+
+.text-primary {
+  color: #3F2619; /* maroon */
+}
+
+.text-accent {
+  color: #D4AF37; /* gold */
+}
+
+.text-secondary {
+  color: #E35409; /* orange */
+}
+
+.text-muted-foreground {
+  color: #6b7280;
+}
+
+/* Additional dark mode text colors */
+.dark .text-gray-600 {
+  color: #d1d5db;
+}
+
+.dark .text-gray-400 {
+  color: #9ca3af;
+}
+
+.dark .text-gray-500 {
+  color: #6b7280;
+}
+
+.dark .text-gray-700 {
+  color: #9ca3af;
+}
+
+.dark .text-gray-800 {
+  color: #d1d5db;
+}
+
+.dark .text-gray-900 {
+  color: #f5f1e8;
+}
+
+.dark .text-white {
+  color: #ffffff;
+}
+
+.dark .text-black {
+  color: #000000;
+}
+
+.dark .bg-background {
+  background-color: #1a0f08;
+}
+
+.dark .bg-white {
+  background-color: #2a1a12;
+}
+
+.dark p {
+  color: #f5f1e8;
+}
+
+.dark .text-primary {
+  color: #f5f1e8;
+}
+
+.dark .text-accent {
+  color: #f4c430;
+}
+
+.dark .text-secondary {
+  color: #d43d0a;
+}
+
+.dark .text-muted-foreground {
+  color: #9ca3af;
+}
+
+.dark .text-maroon\/70 {
+  color: #f5f1e8;
+}
+
+.dark .text-maroon\/80 {
+  color: #f5f1e8;
+}
+
+.dark .text-maroon\/60 {
+  color: #f5f1e8;
+}
+
+/* Dark mode styles for dining timings */
+.dark .bg-gold\/10 {
+  background-color: rgba(244, 196, 48, 0.2);
+}
+
+.dark .bg-maroon\/10 {
+  background-color: rgba(42, 26, 18, 0.3);
+}
+
+.dark .border-gold\/30 {
+  border-color: rgba(244, 196, 48, 0.5);
+}
+
+.dark .border-maroon\/30 {
+  border-color: rgba(42, 26, 18, 0.5);
+}
+
+.dark .text-royal-brown {
+  color: #f5f1e8;
+}
+
+/* Enhanced typography hierarchy */
+h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: clamp(1.25rem, 3vw, 2.25rem);
+  line-height: 1.3;
+}
+
+h4 {
+  font-size: clamp(1.125rem, 2.5vw, 1.875rem);
+  line-height: 1.4;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Micro-interactions */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.hover-scale {
+  transition: transform 0.2s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.hover-glow {
+  transition: box-shadow 0.3s ease;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+}
+
+@theme {
+  --font-family-cinzel: 'Cinzel', serif;
+  --font-family-lora: 'Lora', serif;
+
+  --color-royal-brown: #2C1A10;
+  --color-gold: #D4AF37;
+  --color-maroon: #3F2619;
+  --color-orange: #E35409;
+  --color-cream: #FFF8E7;
+}
