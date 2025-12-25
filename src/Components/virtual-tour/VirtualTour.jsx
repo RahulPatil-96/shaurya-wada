@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import * as THREE from 'three';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Button } from '../../components/ui/button';
+import { Button } from '../../Components/ui/button';
 import { ChevronLeft, ChevronRight, X, Maximize2, Navigation, Info, Heart, ArrowLeft, Camera, Package } from 'lucide-react';
 import { base44 } from '../../api/base44Client';
 import { toast } from "sonner";
